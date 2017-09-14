@@ -68,7 +68,6 @@ public class Assignment_4th
                    item.name, item.num, item.unitPrice, item.getPrice());
             }
             System.out.println("----------------------------------");        
-            System.out.printf("      총계              %10d %n", 
-            		cart.getTotalPrice());
+            System.out.printf("      총계              %10d %n", cart.getTotalPrice());
         }
 }

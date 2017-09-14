@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-class Cart 	// Àå¹Ù±¸´Ï Å¬·¡½º
+class Cart 	// ì¥ë°”êµ¬ë‹ˆ í´ë˜ìŠ¤
 {     
     ArrayList<Item> list = new ArrayList<Item>();
     void addItem(String name, int num, int unitPrice) 
@@ -43,7 +43,7 @@ class Cart 	// Àå¹Ù±¸´Ï Å¬·¡½º
     	int getPrice() 
     	{
     		return unitPrice*num;
-		}   	
+	}   	
     }
 }
 public class Assignment_4th 
@@ -51,15 +51,15 @@ public class Assignment_4th
         public static void main(String args[]) 
         {
             Cart cart = new Cart();
-            cart.addItem("ÃİÄİ·¿", 3, 1000);
-            cart.addItem("ÄÉÀÌÅ©", 1, 25000);
-            cart.addItem("¼¤ÆäÀÎ", 1, 7000);
+            cart.addItem("ìµ¸ì½œë ›", 3, 1000);
+            cart.addItem("ì¼€ì´í¬", 1, 25000);
+            cart.addItem("ìƒ´í˜ì¸", 1, 7000);
             printCart(cart);
         }
         static void printCart(Cart cart) 
         {      
             int num = cart.getItemNum();
-            System.out.println("      »óÇ°¸í   ¼ö·®   ´Ü°¡    ±İ¾×");        
+            System.out.println("      ìƒí’ˆëª…   ìˆ˜ëŸ‰   ë‹¨ê°€    ê¸ˆì•¡");        
             System.out.println("----------------------------------");        
             for (int cnt = 0; cnt < num; cnt++) 
             {
@@ -68,7 +68,7 @@ public class Assignment_4th
                    item.name, item.num, item.unitPrice, item.getPrice());
             }
             System.out.println("----------------------------------");        
-            System.out.printf("      ÃÑ°è              %10d %n", 
+            System.out.printf("      ì´ê³„              %10d %n", 
             		cart.getTotalPrice());
         }
 }
